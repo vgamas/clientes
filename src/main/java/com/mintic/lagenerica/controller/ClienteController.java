@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mintic.lagenerica.model.Cliente;
 import com.mintic.lagenerica.repository.ClienteRepository;
 
-@CrossOrigin(origins = "http://localhost:8181") // Seguridad
+@CrossOrigin(origins = {"http://localhost:8181", "http://localhost:3000"}) // Seguridad
 @RestController
 @RequestMapping("/clientes")
 public class ClienteController {
